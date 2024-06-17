@@ -1,0 +1,100 @@
+/* BASIC */
+/* .container {
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 95px 80px;
+} */
+
+/* USING REPEAT */
+/* .container {
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(3, 100px);
+}
+
+.item1 {
+    grid-column: 2 / 4;
+    grid-row: 3
+} */
+
+/* USING AREA */
+
+/* .container {
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(5, 100px);
+    justify-content: center;
+    gap: 20px;
+    grid-template-areas: 
+    "item1      item1       item1       item1       item1"
+    "item2      item3       .       .       ."
+    "item2      .       .       .       ."
+    "item2      .       .       .       ."
+    "item2      .       .       .       .";
+}
+
+.item1 {
+    grid-area: item1;
+}
+
+.item2 {
+    grid-area: item2;
+}
+
+.item3 {
+    grid-area: item3;
+} */
+
+/* RESPONSIVE */
+
+/* .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100px);
+    justify-content: center;
+    gap: 20px;
+} */
+
+
+/* RESPONSIVE AND AREA */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(5, 100px);
+    justify-content: center;
+    gap: 20px;
+    grid-template-areas: 
+    "item1      item1       item1       item1       item1"
+    "item2      item3       .       .       ."
+    "item2      .       .       .       ."
+    "item2      .       .       .       ."
+    "item2      .       .       .       .";
+}
+
+.item1 {
+    grid-area: item1;
+}
+
+.item2 {
+    grid-area: item2;
+}
+
+.item3 {
+    grid-area: item3;
+}
+
+@media screen and (max-width: 1023px) {
+    .container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(5, 100px);
+    justify-content: center;
+    gap: 20px;
+    grid-template-areas: 
+    "item1      item1       item1 "
+    ".      item2       . "
+    ".      .       . "
+    ".      .       . "
+    ".      .       . ";
+}
+}
